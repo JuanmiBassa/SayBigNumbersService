@@ -1,7 +1,7 @@
 package net.esliceu.numbers;
 
-public class NumbersCat {
-    public static String say(long n) {
+public class NumbersCat implements Numbers {
+    public String say(long n) {
         if (n < 0) {
             return validarNegativo(n);
         }
@@ -60,7 +60,7 @@ public class NumbersCat {
         }
     }
 
-    public static String del20al100(long n) {
+    public String del20al100(long n) {
         if (n > 20 && n < 100) {
             int unidad = (int) n % 10;
             int decena = 10 * ((int) n / 10);
@@ -72,13 +72,13 @@ public class NumbersCat {
         return null;
     }
 
-    public static String validarNegativo(long n) {
+    public String validarNegativo(long n) {
         if (n < 0) {
             return "Menys " + say(-n).toLowerCase();
         } else return "";
     }
 
-    public static String CalcularNum(String UDtextEscala, String textEscala, long n, int div) {
+    public String CalcularNum(String UDtextEscala, String textEscala, long n, int div) {
         int numEscala = (int) (n / div);
         int rest = (int) n % div;
         String resFinal;

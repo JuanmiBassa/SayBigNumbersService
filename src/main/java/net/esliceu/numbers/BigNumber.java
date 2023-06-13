@@ -3,7 +3,7 @@ package net.esliceu.numbers;
 import static java.lang.Integer.*;
 import static java.lang.Long.parseLong;
 
-public class BigNumber {
+public class BigNumber implements BigNumberOperator {
 
     String valor;
 
@@ -18,17 +18,25 @@ public class BigNumber {
     }
 
     // Sumar
+    public String add(BigNumberOperator other) {
+        return add((BigNumber) other).valor;
+    }
+
     public BigNumber add(BigNumber other) {
         BigNumber b = other;
-        añadeCeros(b);
+        addZeros(b);
         String retorno = suma(this.valor, b.valor);
         return new BigNumber(retorno);
+    }
+
+    public String subtract(BigNumberOperator other) {
+        return sub((BigNumber) other).valor;
     }
 
     // Resta
     public BigNumber sub(BigNumber other) {
         BigNumber b = other;
-        añadeCeros(other);
+        addZeros(other);
         String resultado = resta(this.valor, b.valor);
         return new BigNumber(resultado);
     }
@@ -188,7 +196,7 @@ public class BigNumber {
         return this.valor;
     }
 
-    private void añadeCeros(Object other) {
+    private void addZeros(Object other) {
         BigNumber b = (BigNumber) other;
         while (this.valor.length() != b.valor.length()) {
             if (this.valor.length() > b.valor.length()) {

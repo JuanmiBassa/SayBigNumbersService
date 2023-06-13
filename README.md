@@ -66,7 +66,7 @@ Y ya tendremos la conexión entre SonarCloud y nuestro repositorio de GitHub.
 ![Pipeline5](docsImages/pipeline5.PNG)
 
 ### CONFIGURAR GITHUB ACTIONS
-##### Conexión github + WAR:
+#### Conexión github + WAR:
 **¿Qué es?:** Un archivo WAR (Web Application Archive) es un formato de archivo utilizado para empaquetar y distribuir aplicaciones web desarrolladas en el lenguaje de programación Java. Este formato es comúnmente utilizado en entornos de desarrollo web basados en la plataforma Java, como Apache Tomcat, JBoss, WebSphere, entre otros.
 
 Cuando se despliega un archivo WAR en un servidor web, el servidor extrae el contenido del archivo y lo configura para que la aplicación web sea accesible a través de una URL específica.
@@ -84,9 +84,9 @@ En esta configuración podemos ver que ejecutará el comando “mvn clean packag
 ![Pipeline7](docsImages/pipeline7.PNG)
 ![Pipeline8](docsImages/pipeline8.PNG)
 
-##### Conexión github + Maven:
+#### Conexión github + Maven:
 
-##### Conexión github + SonarCloud:
+#### Conexión github + SonarCloud:
 Una vez tengamos configurado el proyecto en SonarCloud web, para su vinculación con GitHub Actions debemos entrar en nuestro proyecto en “SonarCloud > administration > Analysis Method”, en este apartado encontraremos la opción de Analizar el proyecto con GitHub Action .
 Una vez dentro, podemos observar una serie de pasos a seguir para realizar la conexión:
 1 Inhabilitar el análisis automático.

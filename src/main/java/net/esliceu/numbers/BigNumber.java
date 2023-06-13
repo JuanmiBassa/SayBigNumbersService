@@ -17,7 +17,7 @@ public class BigNumber {
     public BigNumber(BigNumber b) {
     }
 
-    // Suma
+    // Sumar
     public BigNumber add(BigNumber other) {
         BigNumber b = other;
         añadeCeros(b);

@@ -38,8 +38,46 @@ Al Ejecutar la aplicación encontramos nuestro proyecto:
 
 #### UNIT TESTS
 Hacer pruebas unitarias en nuestra aplicación Java para que nos permita detectar y corregir errores de manera temprana, garantizando la calidad del código y mejorando la confiabilidad y robustez de nuestra aplicación.
-![Pipeline1](docsImages/unitTest1.PNG)
+![Pipeline1](docsImages/pipeline1.PNG)
 
 #### DESARROLLO DE CÓDIGO
 Programar la aplicación Java es con base a nuestros Tests Unitarios y las especificaciones pedidas.
-![Pipeline2](docsImages/unitTest2.PNG)
+![Pipeline2](docsImages/pipeline2.PNG)
+
+#### MAVEN
+**¿Qué es?:** Maven es una herramienta de gestión de proyectos de software ampliamente utilizada en el desarrollo de aplicaciones Java. Su principal objetivo es ayudar a los desarrolladores a gestionar y organizar las dependencias de su proyecto, así como automatizar tareas comunes relacionadas con la construcción, el empaquetado y la documentación del proyecto.
+
+**Configurar Maven:** El primer paso es instalar Maven en nuestro sistema Local. Una vez instalado podemos configurar Maven con nuestro proyecto, esto se hace creando un archivo YAML en la raíz del proyecto llamado "pom.xml".
+
+En él se incluye información sobre el nombre del proyecto, su versión, los desarrolladores involucrados y las bibliotecas o frameworks que se utilizan.
+Tal que así:
+![Pipeline3](docsImages/pipeline3.PNG)
+
+Una vez configurado el archivo correctamente, nuestro proyecto ya se podrá construir y administrar con los comandos que maven nos proporciona, como por ejemplo  “mvn clean”, “mvn compile” o “mvn package”.
+
+#### SONARCLOUD
+**¿Qué es?:** SonarCloud es una plataforma en línea proporcionada por SonarSource que ofrece análisis estático de código y evaluaciones de calidad para proyectos de desarrollo de software. Ayuda a identificar y corregir problemas de calidad del código, detectar vulnerabilidades de seguridad y mejorar la eficiencia y mantenibilidad del software.
+
+**Vincular un nuevo Proyecto en SonarCloud web:** Creamos una nueva organización en sonarcloud.io para el proyecto y vinculamos el repositorio remoto de GitHub a la nueva organización, en nuestro caso será “SayBigNumbersServices”.
+![Pipeline4](docsImages/pipeline4.PNG)
+
+Y ya tendremos la conexión entre SonarCloud y nuestro repositorio de GitHub.
+**Aquí podemos ver el resultado:**
+![Pipeline5](docsImages/pipeline5.PNG)
+
+#### CONFIGURAR GITHUB ACTIONS
+**Archivo war, ¿Qué es?:** Un archivo WAR (Web Application Archive) es un formato de archivo utilizado para empaquetar y distribuir aplicaciones web desarrolladas en el lenguaje de programación Java. Este formato es comúnmente utilizado en entornos de desarrollo web basados en la plataforma Java, como Apache Tomcat, JBoss, WebSphere, entre otros.
+
+Cuando se despliega un archivo WAR en un servidor web, el servidor extrae el contenido del archivo y lo configura para que la aplicación web sea accesible a través de una URL específica.
+
+**Generar el archivo War:** Para ello, la forma más común es utilizando la Terminal, posicionándonos en el directorio raíz del proyecto y ejecutando el comando “mvn clean package”.
+
+Nosotros utilizaremos y configuraremos un workflow en GitHub Actions para que el archivo .war sea generado automáticamente en cada cambio y subida al repositorio remoto:
+
+Para ello, creamos un archivo YAML, normalmente llamado “main.yml” o “build.yml”, dentro del directorio “.github/workflows”.
+En el interior del archivo configuramos la llamada al Workflow:
+![Pipeline6](docsImages/pipeline6.PNG)
+En esta configuración podemos ver que ejecutará el comando “mvn clean package” al realizar un push o pull del proyecto y creará un artefacto con el archivo .war.
+
+**Aquí podemos ver el resultado:**
+

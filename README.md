@@ -88,8 +88,6 @@ En esta configuración podemos ver que ejecutará el comando “mvn clean packag
 ![Pipeline7](docsImages/pipeline7.PNG)
 ![Pipeline8](docsImages/pipeline8.PNG)
 
-#### Conexión github + Maven:
-
 #### Conexión github + SonarCloud:
 Una vez tengamos configurado el proyecto en SonarCloud web, para su vinculación con GitHub Actions debemos entrar en nuestro proyecto en “SonarCloud > administration > Analysis Method”, en este apartado encontraremos la opción de Analizar el proyecto con GitHub Action .
 Una vez dentro, podemos observar una serie de pasos a seguir para realizar la conexión:

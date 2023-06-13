@@ -26,6 +26,10 @@ Al subir un nuevo archivo de proyecto .war se genera automáticamente un directo
 Al Ejecutar la aplicación encontramos nuestro proyecto:
 ![Tomcat6](docsImages/warTomcat6.PNG)
 
+Ya podemos llamar al servicio con parametros como:
+[Link Test Tomcat](http://tomcat224.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=12&number2=88)
+![Tomcat7](docsImages/warTomcat7.PNG)
+
 ## PIPELINE
 ### CREAR PROYECTO en GIT
 - Creamos un nuevo repositorio en github.com.

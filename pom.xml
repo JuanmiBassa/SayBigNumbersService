@@ -71,6 +71,8 @@
                 <tomcat.path>/SayBigNumber</tomcat.path>
                 <tomcat.username>war-deployer</tomcat.username>
                 <tomcat.password>tomcat</tomcat.password>
+                <sonar.organization>juanmibassa</sonar.organization>
+                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
             </properties>
         </profile>
         <profile>

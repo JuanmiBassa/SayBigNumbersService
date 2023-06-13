@@ -45,7 +45,7 @@ Hacer pruebas unitarias en nuestra aplicación Java para que nos permita detecta
 ![Pipeline1](docsImages/pipeline1.PNG)
 
 ### DESARROLLO DE CÓDIGO
-Programar la aplicación Java es con base a nuestros Tests Unitarios y las especificaciones pedidas.
+Programar la aplicación Java en base a nuestros Tests Unitarios y las especificaciones pedidas.
 ![Pipeline2](docsImages/pipeline2.PNG)
 
 ### MAVEN

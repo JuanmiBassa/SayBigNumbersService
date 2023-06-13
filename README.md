@@ -130,4 +130,19 @@ Una vez tenemos la URL de nuestro Servidor de Despliegue de pruebas, podemos hac
 ### DESPLIEGUE
 
 
+## DIAGRAMAS UML
+### Use Case
+![UseCase](diagramas/UseCaseUML.png)
+
+### Secuencia
+![Secuencia](diagramas/SecuenciaUML.png)
+
+### Flujo
+![Flujo](diagramas/FlujoUML.png)
+
+### Estado
+![Estado](diagramas/EstadoUML.png)
+
+### Clase
+![Clase](diagramas/ClasseUML.png)
 

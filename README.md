@@ -38,3 +38,8 @@ Al Ejecutar la aplicación encontramos nuestro proyecto:
 
 #### UNIT TESTS
 Hacer pruebas unitarias en nuestra aplicación Java para que nos permita detectar y corregir errores de manera temprana, garantizando la calidad del código y mejorando la confiabilidad y robustez de nuestra aplicación.
+![Pipeline1](docsImages/unitTest1.PNG)
+
+#### DESARROLLO DE CÓDIGO
+Programar la aplicación Java es con base a nuestros Tests Unitarios y las especificaciones pedidas.
+![Pipeline2](docsImages/unitTest2.PNG)

@@ -7,23 +7,25 @@
 
 2. En el caso de que no tengamos Java instalado en nuestro dispositivo, habrá que instalarlo.
 ![TomcatLocal2](docsImages/localTomcat2.PNG)
+![TomcatLocal2_1](docsImages/localTomcat2_1.PNG)
 
 3. Comprobar si el servicio Tomcat está instalado en nuestro sistema:
-![TomcatLocal4](docsImages/localTomcat3.PNG)
+![TomcatLocal3](docsImages/localTomcat3.PNG)
 
 4. En el caso de que no esté instalado, seguimos los siguientes pasos:
-  - ![TomcatLocal5](docsImages/localTomcat4.PNG)
-  - ![TomcatLocal6](docsImages/localTomcat4_1.PNG)
-  - ![TomcatLocal7](docsImages/localTomcat4_2.PNG)
+  - ![TomcatLocal4](docsImages/localTomcat4.PNG)
+  - ![TomcatLocal4_1](docsImages/localTomcat4_1.PNG)
+  - ![TomcatLocal4_2](docsImages/localTomcat4_2.PNG)
+  - ![TomcatLocal4_3](docsImages/localTomcat4_3.PNG)
 
 5. Procedemos a la creación del archivo "tomcat.service" para poder ejecutar Tomcat como servicio:
-![TomcatLocal8](docsImages/localTomcat5.PNG)
+![TomcatLocal5](docsImages/localTomcat5.PNG)
   Y procedemos a ponerle el siguiente código:
-![TomcatLocal9](docsImages/localTomcat5_1.PNG)
+![TomcatLocal5_1](docsImages/localTomcat5_1.PNG)
 
 6. Restablecemos Tomcat para establecer los cambios:
-![TomcatLocal7](docsImages/localTomcat6.PNG)
-![TomcatLocal7](docsImages/localTomcat6_1.PNG)
+![TomcatLocal6](docsImages/localTomcat6.PNG)
+![TomcatLocal6_1](docsImages/localTomcat6_1.PNG)
 
 7. Comprobar si tenemos instalado en nuestro sistema el firewall UFW y está activo:
 ![TomcatLocal7](docsImages/localTomcat7.PNG)

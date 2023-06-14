@@ -40,7 +40,8 @@
 11. Habilitamos el servicio de conexiones SSH:
 ![TomcatLocal11](docsImages/localTomcat11.PNG)
 
-
+12. Comprobamos si el servicio UFW está activo y cargado con éxito:
+![TomcatLocal12](docsImages/localTomcat12.PNG)
 
 13. Comprobamos el estado de UFW y vemos si están los puertos que hemos habilitado:
 ![TomcatLocal13](docsImages/localTomcat13.PNG)

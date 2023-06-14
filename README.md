@@ -10,7 +10,7 @@
 ![TomcatLocal2_1](docsImages/localTomcat2_1.PNG)
 
 3. Comprobar si el servicio Tomcat está instalado en nuestro sistema:
-![TomcatLocal3](docsImages/localTomcat3.PNG)
+![TomcatLocal3](docsImages/localTomcat3.png)
 
 4. En el caso de que no esté instalado, seguimos los siguientes pasos:
   - ![TomcatLocal4](docsImages/localTomcat4.PNG)

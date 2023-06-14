@@ -1,4 +1,4 @@
-# Pràctica final Entorns: Say Big Numbers
+# Práctica final Entorns: Say Big Numbers
 
 ## Configuración de webapp
 ### Configurar Tomcat local:

@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Java Tests
 
 on:
   push:
@@ -16,8 +16,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm ci
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
 
-    - name: Run Cypress tests
-      run: npx cypress run --headless --browser chrome
+    - name: Build and test Java project
+      run: |
+        ./gradlew clean build 
+

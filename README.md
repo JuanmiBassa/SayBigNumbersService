@@ -2,6 +2,48 @@
 
 ## Configuración de webapp
 ### Configurar Tomcat local:
+1. Mirar si tenemos java instalado
+![TomcatLocal1](docsImages/localTomcat1.PNG)
+
+2. Si no esta instalado, lo instalamos con el siguiente comando:
+![TomcatLocal2](docsImages/localTomcat2.PNG)
+
+3. Instalamos tomcat9
+![TomcatLocal3](docsImages/localTomcat3.PNG)
+
+4. Mirar si tomcat está instalado.
+![TomcatLocal4](docsImages/localTomcat4.PNG)
+
+5. Crear la carpeta Tomcat, instalarlo, y darle permisos:
+![TomcatLocal5](docsImages/localTomcat5.PNG)
+![TomcatLocal6](docsImages/localTomcat6.PNG)
+![TomcatLocal7](docsImages/localTomcat7.PNG)
+
+6. Crear el archivo tomcat.service:
+![TomcatLocal8](docsImages/localTomcat8.PNG)
+![TomcatLocal9](docsImages/localTomcat9.PNG)
+
+7. Restablecer tomcat para establecer los cambios:
+![TomcatLocal7](docsImages/localTomcat7.PNG)
+![TomcatLocal7](docsImages/localTomcat7.PNG)
+
+8. Ajustar firewall UFW con el puerto 8080:
+![TomcatLocal8](docsImages/localTomcat8.PNG)
+
+9. Configurar los usuarios del tomcat (usuarios & contraseñas):
+![TomcatLocal9](docsImages/localTomcat9.PNG)
+
+10. Entrar en [localhost](http://localhost:8080), que es nuestro tomcat.
+![TomcatLocal10](docsImages/localTomcat10.PNG)
+
+11. Comprobar que funcionan las paginas de Server Status, Manager App y Host Manager
+![TomcatLocal11](docsImages/localTomcat11.PNG)
+
+20. Manager App, donde encontramos el listado de apps:
+![TomcatLocal12](docsImages/localTomcat12.PNG)
+
+22.  Desplegar el archivo WAR y ejecutar app:
+
 
 ### Configurar archivo WAR en Tomcat Servidor
 Mover archivo .war de local al servidor con scp:
@@ -14,7 +56,7 @@ Mover a la ruta webapps de tomcat:
 ![Tomcat3](docsImages/warTomcat3.PNG)
 
 Entrar vía web al tomcat del servidor:
-[Link Servidor Tomcat](http://tomcat224.cfgs.esliceu.net:8080/manager/html)
+[Servidor Tomcat](http://tomcat224.cfgs.esliceu.net:8080/manager/html)
 
 Otra opción para subir y desplegar el archivo .war manualmente, es en el apartado “manager” de tomcat:
 ![Tomcat4](docsImages/warTomcat4.PNG)
@@ -27,7 +69,7 @@ Al Ejecutar la aplicación encontramos nuestro proyecto:
 ![Tomcat6](docsImages/warTomcat6.PNG)
 
 Ya podemos llamar al servicio con parametros como:
-[Link Test Tomcat](http://tomcat224.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=12&number2=88)
+[Test Tomcat](http://tomcat224.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=12&number2=88)
 ![Tomcat7](docsImages/warTomcat7.PNG)
 
 ## PIPELINE

@@ -20,15 +20,16 @@
 
     4. En el caso de que no esté instalado, seguimos los siguientes pasos:
   
-  - ![TomcatLocal4](docsImages/localTomcat4.png)
+  + ![TomcatLocal4](docsImages/localTomcat4.png)
     
-  - ![TomcatLocal4_1](docsImages/localTomcat4_1.png)
+  + ![TomcatLocal4_1](docsImages/localTomcat4_1.png)
   
-  - ![TomcatLocal4_2](docsImages/localTomcat4_2.png)
+  + ![TomcatLocal4_2](docsImages/localTomcat4_2.png)
   
-  - ![TomcatLocal4_3](docsImages/localTomcat4_3.png)
-  
-        5. Procedemos a la creación del archivo "tomcat.service" para poder ejecutar Tomcat como servicio:
+  + ![TomcatLocal4_3](docsImages/localTomcat4_3.png)
+  +
+
+    5. Procedemos a la creación del archivo "tomcat.service" para poder ejecutar Tomcat como servicio:
   
   ![TomcatLocal5](docsImages/localTomcat5.png)
     

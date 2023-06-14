@@ -1,5 +1,7 @@
 # Práctica final Entorns: Say Big Numbers
 
+*Este repositorio contiene el código y la configuración necesarios para la aplicación web Say Big Numbers. A continuación, se detallan los pasos para configurar el entorno de desarrollo y desplegar la aplicación.*
+
 ## Configuración de webapp
 ### Configurar Tomcat local:
 1. Mirar si tenemos java instalado

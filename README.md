@@ -6,7 +6,7 @@
 ### Configurar Tomcat local:
     1. Mirar si tenemos java instalado
   
-  ![TomcatLocal1](docsImages/localTomcat1.png)
+     ![TomcatLocal1](docsImages/localTomcat1.png)
 
     2. En el caso de que no tengamos Java instalado en nuestro dispositivo, habrá que instalarlo.
   

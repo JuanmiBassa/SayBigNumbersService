@@ -3,68 +3,68 @@
 ## Configuración de webapp
 ### Configurar Tomcat local:
 1. Mirar si tenemos java instalado
-![TomcatLocal1](docsImages/localTomcat1.PNG)
+![TomcatLocal1](docsImages/localTomcat1.png)
 
 2. En el caso de que no tengamos Java instalado en nuestro dispositivo, habrá que instalarlo.
-![TomcatLocal2](docsImages/localTomcat2.PNG)
-![TomcatLocal2_1](docsImages/localTomcat2_1.PNG)
+![TomcatLocal2](docsImages/localTomcat2.png)
+![TomcatLocal2_1](docsImages/localTomcat2_1.png)
 
 3. Comprobar si el servicio Tomcat está instalado en nuestro sistema:
 ![TomcatLocal3](docsImages/localTomcat3.png)
 
 4. En el caso de que no esté instalado, seguimos los siguientes pasos:
-  - ![TomcatLocal4](docsImages/localTomcat4.PNG)
-  - ![TomcatLocal4_1](docsImages/localTomcat4_1.PNG)
-  - ![TomcatLocal4_2](docsImages/localTomcat4_2.PNG)
-  - ![TomcatLocal4_3](docsImages/localTomcat4_3.PNG)
+  - ![TomcatLocal4](docsImages/localTomcat4.png)
+  - ![TomcatLocal4_1](docsImages/localTomcat4_1.png)
+  - ![TomcatLocal4_2](docsImages/localTomcat4_2.png)
+  - ![TomcatLocal4_3](docsImages/localTomcat4_3.png)
 
 5. Procedemos a la creación del archivo "tomcat.service" para poder ejecutar Tomcat como servicio:
-![TomcatLocal5](docsImages/localTomcat5.PNG)
+![TomcatLocal5](docsImages/localTomcat5.png)
   Y procedemos a ponerle el siguiente código:
-![TomcatLocal5_1](docsImages/localTomcat5_1.PNG)
+![TomcatLocal5_1](docsImages/localTomcat5_1.png)
 
 6. Restablecemos Tomcat para establecer los cambios:
-![TomcatLocal6](docsImages/localTomcat6.PNG)
-![TomcatLocal6_1](docsImages/localTomcat6_1.PNG)
+![TomcatLocal6](docsImages/localTomcat6.png)
+![TomcatLocal6_1](docsImages/localTomcat6_1.png)
 
 7. Comprobar si tenemos instalado en nuestro sistema el firewall UFW y está activo:
-![TomcatLocal7](docsImages/localTomcat7.PNG)
+![TomcatLocal7](docsImages/localTomcat7.png)
 
 8. En el caso de que no lo tengamos instalado, proceder a instalarlo:
-![TomcatLocal8](docsImages/localTomcat8.PNG)
+![TomcatLocal8](docsImages/localTomcat8.png)
 
 9. Habilitamos el firewall en el arranque de nuestro sistema:
-![TomcatLocal9](docsImages/localTomcat9.PNG)
+![TomcatLocal9](docsImages/localTomcat9.png)
 
 10. Habilitamos en UFW el puerto que queremos abrir (8080):
-![TomcatLocal10](docsImages/localTomcat10.PNG)
+![TomcatLocal10](docsImages/localTomcat10.png)
 
 11. Habilitamos el servicio de conexiones SSH:
-![TomcatLocal11](docsImages/localTomcat11.PNG)
+![TomcatLocal11](docsImages/localTomcat11.png)
 
 12. Comprobamos si el servicio UFW está activo y cargado con éxito:
-![TomcatLocal12](docsImages/localTomcat12.PNG)
+![TomcatLocal12](docsImages/localTomcat12.png)
 
 13. Comprobamos el estado de UFW y vemos si están los puertos que hemos habilitado:
-![TomcatLocal13](docsImages/localTomcat13.PNG)
+![TomcatLocal13](docsImages/localTomcat13.png)
 
 14. Vemos si UFW deniega el tráfico entrante, y permite el saliente:
-![TomcatLocal14](docsImages/localTomcat14.PNG)
+![TomcatLocal14](docsImages/localTomcat14.png)
 
 15. Configurar los usuarios del tomcat (usuarios & contraseñas):
-![TomcatLocal15](docsImages/localTomcat15.PNG)
+![TomcatLocal15](docsImages/localTomcat15.png)
 
 16. Entrar en [localhost](http://localhost:8080), que es nuestro tomcat.
-![TomcatLocal16](docsImages/localTomcat16.PNG)
+![TomcatLocal16](docsImages/localTomcat16.png)
 
 17. Comprobar que funcionan las paginas de Server Status, Manager App y Host Manager
-![TomcatLocal17](docsImages/localTomcat17.PNG)
+![TomcatLocal17](docsImages/localTomcat17.png)
 
 18. Manager App, donde encontramos el listado de apps:
-![TomcatLocal18](docsImages/localTomcat18.PNG)
+![TomcatLocal18](docsImages/localTomcat18.png)
 
 19.  Desplegar el archivo WAR y ejecutar app:
-![TomcatLocal19](docsImages/localTomcat19.PNG)
+![TomcatLocal19](docsImages/localTomcat19.png)
 
 ### Configurar archivo WAR en Tomcat Servidor
 Mover archivo .war de local al servidor con scp:

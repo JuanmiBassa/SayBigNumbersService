@@ -241,21 +241,61 @@ Si entramos en la información de la ejecución, veremos todos los pasos realiza
 ![Pipeline15](docsImages/pipeline15.PNG)
 
 ### API TEST con Postman
-Postman es una herramienta de colaboración y desarrollo de API que permite a los desarrolladores probar, documentar y realizar solicitudes a API de manera eficiente. Es una aplicación que se ejecuta en el escritorio y brinda una interfaz gráfica de usuario para enviar solicitudes HTTP y HTTPS a diferentes endpoints de API.
+**¿Qué es?:** Postman es una herramienta de colaboración y desarrollo de API que permite a los desarrolladores probar, documentar y realizar solicitudes a API de manera eficiente. Es una aplicación que se ejecuta en el escritorio y brinda una interfaz gráfica de usuario para enviar solicitudes HTTP y HTTPS a diferentes endpoints de API.
 
 Una vez tenemos la URL de nuestro Servidor de Despliegue de pruebas, podemos hacer el siguiente test, el cual devolverá 200 si la respuesta ha sido exitosa, lo que significa que hay conexión:
 
 ![Pipeline16](docsImages/pipeline16.PNG)
 
 ### E2E TEST con Cypress
+**¿Qué es?:** Cypress es una herramienta de pruebas E2E principalmente diseñada para aplicaciones web, esta se ejecuta localmente en tu entorno de desarrollo.
+
+**Instalación en Proyecto:**
+Para crear un nuevo proyecto con Cypress será necesario tener instalado las siguientes herramientas:
+![Cypress1](docsImages/cypress1.PNG)
+![Cypress2](docsImages/cypress2.PNG)
+
+Una vez tengamos el paso anterior, desde el directorio raíz de nuestro proyecto iniciamos con “npm init -y” un nuevo proyecto Node.js, este creará un archivo package.json con valores por defecto.
+![Cypress3](docsImages/cypress3.PNG)
+
+**Configuración Test:**
+Instalamos cypress en nuestro proyecto:
+![Cypress4](docsImages/cypress4.PNG)
+
+Y abrimos el test Runner de Cypress con “npm run open”, esto ejecutará una lista de nuestros tests de Cypress definidos en “package.json”:
+![Cypress5](docsImages/cypress7.PNG)
+
+Los test se escriben en archivos JavaScript, por lo general se publican en el directorio “integrations” de Cypress donde se creará un archivo para cada funcionalidad, en este caso es un test que verifica el titulo de la página, se podría llamar “checkTitle.spec.js”.
+![Cypress6](docsImages/cypress8.PNG)
 
 ### CONFIGURAR GITHUB ACTIONS
 
 ##### Conexión de github + Postman (API):
+Una vez tengamos la configuración de nuestros Test en Postman terminado, procedemos a hacer la conexión y creación de su GitHub Actions, para ello:
+- En nuestro repositorio de GitHub, en el directorio “.github/workflows” del proyecto creamos el archivo YAML “postman.yml”, y lo editamos con herramientas y comandos adecuados para ejecutar las pruebas API ya creadas:
+![PostmanAction1](docsImages/postmanTest1.PNG)
+
+- Haz un commit y un push de tus cambios al repositorio de GitHub.
+- Ve a la pestaña "Actions" en tu repositorio de GitHub y verás que se está ejecutando un flujo de trabajo.
+- Espera a que el flujo de trabajo se complete y verifica los resultados de las pruebas de Postman.
 
 ##### Conexión de github + Cypress (e2e):
+Una vez tengamos la configuración de nuestros Test en Postman terminado, procedemos a hacer la conexión y creación de su GitHub Actions, para ello:
+- En nuestro repositorio de GitHub, en el directorio “.github/workflows” del proyecto creamos el archivo YAML “cypress.yml”, y lo editamos con herramientas y comandos adecuados para ejecutar las pruebas e2e ya creadas:
+![CypressAction1](docsImages/actionCypress1.PNG)
+
+- Haz un commit y un push de tus cambios al repositorio de GitHub.
+- Ve a la pestaña "Actions" en tu repositorio de GitHub y verás que se está ejecutando un flujo de trabajo.
+- Espera a que el flujo de trabajo se complete y verifica los resultados de las pruebas de Cypress.
 
 ### DESPLIEGUE
+Por último, debemos configurar un YAML para que despliegue nuestra aplicación en el entorno deseado (desarrollo, pruebas, producción, etc.) después de que todas las pruebas hayan sido exitosas y el análisis de SonarCloud sea satisfactorio. 
+
+El archivo YAML estará situado en el directorio “.github/workflows”, y su configuración se basará en definir los pasos necesarios para ejecutar secuencialmente los diferentes flujos de trabajos instalados.
+![Deploy1](docsImages/deploy1.PNG)
+![Deploy2](docsImages/deploy2.PNG)
+![Deploy3](docsImages/deploy3.PNG)
+![Deploy4](docsImages/deploy4.PNG)
 
 
 ## DIAGRAMAS UML

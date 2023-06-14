@@ -64,7 +64,6 @@
 19.  Desplegar el archivo WAR y ejecutar app:
 ![TomcatLocal19](docsImages/localTomcat19.PNG)
 
-
 ### Configurar archivo WAR en Tomcat Servidor
 Mover archivo .war de local al servidor con scp:
 ![Tomcat1](docsImages/warTomcat1.PNG)
@@ -91,6 +90,8 @@ Al Ejecutar la aplicación encontramos nuestro proyecto:
 Ya podemos llamar al servicio con parametros como:
 [Test Tomcat](http://tomcat224.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=12&number2=88)
 ![Tomcat7](docsImages/warTomcat7.PNG)
+
+
 
 ## PIPELINE
 ### CREAR PROYECTO en GIT
